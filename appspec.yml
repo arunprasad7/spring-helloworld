@@ -6,10 +6,10 @@ files:
    destination: /home/ec2-user/springbootapp
 
 hooks:
-  ApplicationStop:
-    - location: scripts/server_stop.sh
-      timeout: 300
-      runas: root
+  # ApplicationStop:
+  #   - location: scripts/server_stop.sh
+  #     timeout: 300
+  #     runas: root
   ApplicationStart:
     - location: scripts/server_start.sh
       timeout: 300
