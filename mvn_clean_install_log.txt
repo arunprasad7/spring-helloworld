@@ -1,0 +1,42 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< net.paulcz:hello >--------------------------
+[INFO] Building hello 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ hello ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ hello ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ hello ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to D:\Minuscule\spring-helloworld\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ hello ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\Minuscule\spring-helloworld\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ hello ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ hello ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.1:jar (default-jar) @ hello ---
+[INFO] Building jar: D:\Minuscule\spring-helloworld\target\hello-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.3.RELEASE:repackage (repackage) @ hello ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ hello ---
+[INFO] Installing D:\Minuscule\spring-helloworld\target\hello-0.0.1-SNAPSHOT.jar to C:\Users\aprasad\.m2\repository\net\paulcz\hello\0.0.1-SNAPSHOT\hello-0.0.1-SNAPSHOT.jar
+[INFO] Installing D:\Minuscule\spring-helloworld\pom.xml to C:\Users\aprasad\.m2\repository\net\paulcz\hello\0.0.1-SNAPSHOT\hello-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.819 s
+[INFO] Finished at: 2022-09-27T07:30:54+05:30
+[INFO] ------------------------------------------------------------------------

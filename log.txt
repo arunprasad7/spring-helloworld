@@ -1,0 +1,178 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< net.paulcz:hello >--------------------------
+[INFO] Building hello 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.1.3.RELEASE:run (default-cli) > test-compile @ hello >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ hello ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ hello ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ hello ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\Minuscule\spring-helloworld\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ hello ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.1.3.RELEASE:run (default-cli) < test-compile @ hello <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.3.RELEASE:run (default-cli) @ hello ---
+2022-09-27 07:30:57.968  WARN 7584 --- [           main] io.fabric8.kubernetes.client.Config      : Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+2022-09-27 07:30:58.957  INFO 7584 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$21d62a3a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-27 07:30:58.987  WARN 7584 --- [           main] io.fabric8.kubernetes.client.Config      : Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+2022-09-27 07:30:58.987  WARN 7584 --- [           main] io.fabric8.kubernetes.client.Config      : Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+2022-09-27 07:30:58.988  WARN 7584 --- [           main] o.s.c.k.KubernetesAutoConfiguration      : No namespace has been detected. Please specify KUBERNETES_NAMESPACE env var, or use a later kubernetes version (1.3 or later)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.3.RELEASE)
+
+2022-09-27 07:30:59.100 DEBUG 7584 --- [           main] o.s.cloud.kubernetes.config.ConfigUtils  : Config Map name has not been set, taking it from property/env spring.application.name (default=application)
+2022-09-27 07:30:59.100 DEBUG 7584 --- [           main] o.s.cloud.kubernetes.config.ConfigUtils  : Config Map namespace has not been set, taking it from client (ns=null)
+2022-09-27 07:30:59.178  WARN 7584 --- [           main] o.s.c.k.config.ConfigMapPropertySource   : Can't read configMap with name: [hello] in namespace:[null]. Ignoring
+2022-09-27 07:30:59.181  INFO 7584 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='composite-configmap', propertySources=[ConfigMapPropertySource@884861690 {name='configmap.hello.null', properties={}}]}
+2022-09-27 07:30:59.182 DEBUG 7584 --- [           main] o.s.cloud.kubernetes.config.ConfigUtils  : Secret name has not been set, taking it from property/env spring.application.name (default=application)
+2022-09-27 07:30:59.183 DEBUG 7584 --- [           main] o.s.cloud.kubernetes.config.ConfigUtils  : Secret namespace has not been set, taking it from client (ns=null)
+2022-09-27 07:30:59.184 DEBUG 7584 --- [           main] o.s.cloud.kubernetes.config.ConfigUtils  : Secret name has not been set, taking it from property/env spring.application.name (default=application)
+2022-09-27 07:30:59.184 DEBUG 7584 --- [           main] o.s.cloud.kubernetes.config.ConfigUtils  : Secret namespace has not been set, taking it from client (ns=null)
+2022-09-27 07:30:59.185  INFO 7584 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: SecretsPropertySource {name='secrets.hello.null'}
+2022-09-27 07:30:59.211  WARN 7584 --- [           main] io.fabric8.kubernetes.client.Config      : Error reading service account token from: [/var/run/secrets/kubernetes.io/serviceaccount/token]. Ignoring.
+2022-09-27 07:30:59.216  WARN 7584 --- [           main] k.p.KubernetesProfileApplicationListener : Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+2022-09-27 07:30:59.218  INFO 7584 --- [           main] net.paulcz.hello.Application             : The following profiles are active: development
+2022-09-27 07:30:59.762  INFO 7584 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2de78502-0a60-3ff4-ab35-9eeae2df1569
+2022-09-27 07:30:59.827  INFO 7584 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$21d62a3a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-27 07:31:00.127  INFO 7584 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-27 07:31:00.159  INFO 7584 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-27 07:31:00.159  INFO 7584 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2022-09-27 07:31:00.169  INFO 7584 --- [           main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_202\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Users\aprasad\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\aprasad\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\windows\System32\OpenSSH;C:\Program Files (x86)\Box\Box Edit;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_202\bin;C:\Program Files (x86)\apache-ant-1.10.12\bin;C:\Program Files\Microsoft VS Code 1\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\PuTTY;D:\Arun Prasad Prologis\Minuscule\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\Users\aprasad\AppData\Local\Microsoft\WindowsApps;C:\Program Files\sfdx\bin;C:\Users\aprasad\AppData\Roaming\npm;C:\Users\aprasad\AppData\Local\Yarn\bin;D:\apache-maven-3.8.6\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.2\bin;C:\Users\aprasad\AppData\Local\GitHubDesktop\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+2022-09-27 07:31:00.276  INFO 7584 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-27 07:31:00.277  INFO 7584 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1049 ms
+2022-09-27 07:31:00.673  INFO 7584 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-27 07:31:01.109  WARN 7584 --- [default.svc/...] i.f.k.c.d.i.WatchConnectionManager       : Exec Failure
+
+java.net.UnknownHostException: kubernetes.default.svc
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281) ~[na:1.8.0_202]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[na:1.8.0_202]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[na:1.8.0_202]
+	at okhttp3.Dns$1.lookup(Dns.java:39) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:171) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:137) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:82) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:171) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67) ~[okhttp-3.8.1.jar:na]
+	at io.fabric8.kubernetes.client.utils.BackwardsCompatibilityInterceptor.intercept(BackwardsCompatibilityInterceptor.java:119) ~[kubernetes-client-4.1.0.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67) ~[okhttp-3.8.1.jar:na]
+	at io.fabric8.kubernetes.client.utils.ImpersonatorInterceptor.intercept(ImpersonatorInterceptor.java:66) ~[kubernetes-client-4.1.0.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67) ~[okhttp-3.8.1.jar:na]
+	at io.fabric8.kubernetes.client.utils.HttpClientUtils$2.intercept(HttpClientUtils.java:109) ~[kubernetes-client-4.1.0.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:185) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:135) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32) [okhttp-3.8.1.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_202]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_202]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_202]
+
+2022-09-27 07:31:01.111 ERROR 7584 --- [           main] .r.EventBasedConfigurationChangeDetector : Error while establishing a connection to watch config maps: configuration may remain stale
+
+io.fabric8.kubernetes.client.KubernetesClientException: Failed to start websocket
+	at io.fabric8.kubernetes.client.dsl.internal.WatchConnectionManager$2.onFailure(WatchConnectionManager.java:204) ~[kubernetes-client-4.1.0.jar:na]
+	at okhttp3.internal.ws.RealWebSocket.failWebSocket(RealWebSocket.java:543) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.ws.RealWebSocket$2.onFailure(RealWebSocket.java:208) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:148) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32) ~[okhttp-3.8.1.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_202]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_202]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_202]
+Caused by: java.net.UnknownHostException: kubernetes.default.svc
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281) ~[na:1.8.0_202]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[na:1.8.0_202]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[na:1.8.0_202]
+	at okhttp3.Dns$1.lookup(Dns.java:39) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:171) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:137) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:82) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:171) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67) ~[okhttp-3.8.1.jar:na]
+	at io.fabric8.kubernetes.client.utils.BackwardsCompatibilityInterceptor.intercept(BackwardsCompatibilityInterceptor.java:119) ~[kubernetes-client-4.1.0.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67) ~[okhttp-3.8.1.jar:na]
+	at io.fabric8.kubernetes.client.utils.ImpersonatorInterceptor.intercept(ImpersonatorInterceptor.java:66) ~[kubernetes-client-4.1.0.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67) ~[okhttp-3.8.1.jar:na]
+	at io.fabric8.kubernetes.client.utils.HttpClientUtils$2.intercept(HttpClientUtils.java:109) ~[kubernetes-client-4.1.0.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:185) ~[okhttp-3.8.1.jar:na]
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:135) ~[okhttp-3.8.1.jar:na]
+	... 4 common frames omitted
+
+[WARNING] 
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@73c3e418 rejected from java.util.concurrent.ScheduledThreadPoolExecutor@45d6814a[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+    at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution (ThreadPoolExecutor.java:2063)
+    at java.util.concurrent.ThreadPoolExecutor.reject (ThreadPoolExecutor.java:830)
+    at java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute (ScheduledThreadPoolExecutor.java:326)
+    at java.util.concurrent.ScheduledThreadPoolExecutor.schedule (ScheduledThreadPoolExecutor.java:533)
+    at java.util.concurrent.ScheduledThreadPoolExecutor.submit (ScheduledThreadPoolExecutor.java:632)
+    at java.util.concurrent.Executors$DelegatedExecutorService.submit (Executors.java:678)
+    at io.fabric8.kubernetes.client.dsl.internal.WatchConnectionManager.scheduleReconnect (WatchConnectionManager.java:300)
+    at io.fabric8.kubernetes.client.dsl.internal.WatchConnectionManager.access$800 (WatchConnectionManager.java:48)
+    at io.fabric8.kubernetes.client.dsl.internal.WatchConnectionManager$2.onFailure (WatchConnectionManager.java:213)
+    at okhttp3.internal.ws.RealWebSocket.failWebSocket (RealWebSocket.java:543)
+    at okhttp3.internal.ws.RealWebSocket$2.onFailure (RealWebSocket.java:208)
+    at okhttp3.RealCall$AsyncCall.execute (RealCall.java:148)
+    at okhttp3.internal.NamedRunnable.run (NamedRunnable.java:32)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+2022-09-27 07:31:01.253  INFO 7584 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-09-27 07:31:01.254  INFO 7584 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-27 07:31:01.255  INFO 7584 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2022-09-27 07:31:01.268  INFO 7584 --- [           main] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-09-27 07:31:01.268  INFO 7584 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 95 ms
+2022-09-27 07:31:01.288  INFO 7584 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-09-27 07:31:01.364  INFO 7584 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-09-27 07:31:01.386  INFO 7584 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-27 07:31:01.388  INFO 7584 --- [           main] net.paulcz.hello.Application             : Started Application in 3.771 seconds (JVM running for 6.217)
+2022-09-27 07:31:05.770  INFO 7584 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-27 07:31:05.771  INFO 7584 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-27 07:31:05.776  INFO 7584 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
