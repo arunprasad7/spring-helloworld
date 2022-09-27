@@ -1,9 +1,9 @@
 version: 0.0
 os: linux
 
-#files:
-#  - source: /
-#    destination: /home/ec2-user/server
+files:
+ - source: /
+   destination: /home/ec2-user/server
 
 hooks:
   ApplicationStop:
